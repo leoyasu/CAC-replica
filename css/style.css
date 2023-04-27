@@ -10,20 +10,20 @@ header{
 }
 
 .img-logo{
-    height: 50%;
+    height: 70px;
     text-align: center;
 }
 
-h2{
-    display: inline;
-    color: white;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 15px 0;
+.comprar-ticket{
+    color: green;
 }
 
-nav{
-    float: right;
+h2{
+    display: inline-block;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px 0;
+    padding: 15px;
 }
 
 .logo{
@@ -31,8 +31,13 @@ nav{
     color: white;
 }
 
+nav{
+    float: right;
+    padding: 15px;
+}
+
 a{
     color: white;
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 20px;
 }
