@@ -93,39 +93,94 @@ a{
 
 .titulo-cards {
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 2px;
     padding: 10px;
+    color: #000000;
+    text-transform: uppercase;
 }
 
 .titulo-cards-1{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 8px;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    color: #000000;
     font-weight: 400;
-    text-decoration: none;
-    font-style: normal;
-    font-variant: normal;
-    text-transform: uppercase;
     padding: 8px;
 }
 
 .titulo-cards-2{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    color: hsl(0, 0%, 0%);
     font-weight: 500;
-    text-decoration: none;
-    font-style: normal;
-    font-variant: normal;
-    text-transform: uppercase;
 }
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    padding: 0 10px;
     width: 280px;
+    padding-right: 25px;
   }
 
+.card h4 {
+    padding-bottom: 15px;
+}
+
+.card p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    word-spacing: 2px;
+    color: hsl(0, 0%, 0%);
+}
+
+.card-JS{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(254, 193, 7);
+    border: none;
+    color: black;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+.card-RA{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(23, 162, 183);
+    border: none;
+    color: white;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+.card-NG{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(107, 118, 124);
+    border: none;
+    color: white;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+.card-SU{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(220, 53, 70);
+    border: none;
+    color: white;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    border-radius: 3px;
+    font-weight: 700;
+}
