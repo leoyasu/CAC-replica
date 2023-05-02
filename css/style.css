@@ -85,7 +85,7 @@ a{
     border-radius: 8px;
 }
 
-.flex-container {
+.flex-container-card {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,9 +113,9 @@ a{
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     width: 280px;
     padding-right: 25px;
+    border: 2px solid , rgb(223,223,223);
   }
 
 .card h4 {
@@ -184,3 +184,32 @@ a{
     border-radius: 3px;
     font-weight: 700;
 }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: auto;
+    padding-top: 20px;
+  }
+  
+  .image-hon {
+    flex: 0 0 50%;
+  }
+  
+  .image-hon img {
+    width: 100%;
+    height: auto;
+    padding-right: 1px;
+  }
+  
+  .text {
+    flex: 1;
+    background-color: rgb(53,58,64);
+    color: white;
+    height: auto;
+  }
+
+  .text p {
+    padding-left: 15px;
+  }
