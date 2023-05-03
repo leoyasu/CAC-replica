@@ -9,49 +9,52 @@ header{
     width: 100%;
 }
 
-.img-logo{
-    height: 70px;
+.img-logo {
+    height: 50px;
     text-align: center;
-}
-
-.comprar-ticket{
-    color: green;
-}
-
-h2{
+ }
+ 
+.logo h2 {
     display: inline-block;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 15px 0;
     padding: 15px;
+ }
+
+.comprar-ticket{
+    color: green;
 }
 
 .logo{
     display: inline-block;
     color: white;
+    padding-left: 50px;
+    padding-top: 10px;
 }
 
-nav{
+header nav{
     float: right;
-    padding: 15px;
+    padding: 20px;
 }
 
-a{
+header a{
     color: white;
     text-decoration: none;
-    padding: 20px;
+    padding: 15px;
 }
 
 .img-main{
     width: 100%;
     overflow: hidden;
     position: relative;
+    filter: brightness(40%);
 }
 
 .card-float{
     position: absolute;
     right: 80px;
-    top: 200px;
+    top: 450px;
     width: 50%;
     color: white;
     font-weight: 300;
@@ -208,16 +211,19 @@ a{
     background-color: rgb(53,58,64);
     color: white;
     height: auto;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 5px;
   }
 
   .text p {
-    padding-left: 15px;
     font-size: 13px;
     font-weight: 100;
+    padding-top: 5px;
   }
 
   .container-conoceMas {
-    padding: 20px 15px;
+    padding-top: 20px;
   }
 
   .button-conoceMas {
