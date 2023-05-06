@@ -54,7 +54,7 @@ header a{
 .card-float{
     position: absolute;
     right: 80px;
-    top: 450px;
+    top: 350px;
     width: 50%;
     color: white;
     font-weight: 300;
@@ -253,4 +253,57 @@ header a{
 .titulo-orador-2{
     font-size: 20px;
     font-weight: 700;
+}
+
+.anotar {
+    width: 50%;
+    margin: -40px auto;
+    display: flex;
+    flex-direction: column;
+}
+.anotar .anotar-subtitulo{
+    font-weight: 600;
+}
+.anotar .anotar-recordatorio{
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.anotar-nombre {
+    width: 47%;
+    margin-bottom: 15px;
+}
+
+.anotar-apellido {
+    width: 47%;
+    margin-left: 5.2%;
+}
+
+.anotar-texto {
+    flex-direction: row;
+    width: 100%;
+}
+
+.anotar-boton {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #89d82ece;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+@media 
+(max-width: 992px) {
+    .anotar-nombre {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .anotar-apellido {
+        width: 100%;
+        margin-bottom: 15px;
+        margin-left: 0;
+    }
 }
