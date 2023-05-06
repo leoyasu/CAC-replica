@@ -1,0 +1,8 @@
+.bg-image{
+    background-image: url("../assets/images/hawaii.jpg");
+    height: 90vh; 
+    background-position: center;
+    background-size: cover;
+    background-color:rgba(48,54,54);
+    background-blend-mode: soft-light;
+}
