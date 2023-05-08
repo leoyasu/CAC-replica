@@ -270,6 +270,25 @@
 
 .footer{
     background-color:rgb(29,62,69);
+    
 }
 
-.footer li a{color:white !important;}
+.footer li a{
+    color:white !important;
+    text-decoration: none;
+}
+
+.footer ul.list-inline {
+    display: flex;
+    justify-content: center;
+    }
+
+    @media (max-width: 576px) {
+    .footer ul.list-inline {
+        flex-wrap: wrap;
+    }
+
+    .footer ul.list-inline li {
+        flex: 0 0 50%;
+    }
+}
