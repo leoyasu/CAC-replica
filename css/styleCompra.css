@@ -4,6 +4,24 @@
     box-sizing: border-box;
 }
 
+.card-column{
+    text-align: center;
+    margin: 5px -10px 5px;
+}
+
+.card {
+    padding-top: 20px;
+    border: 1px solid rgb(0,123,255); 
+}
+
+.card-subtitle{
+    margin-bottom: 25px;
+}
+
+.card-title {
+    margin-bottom: 25px;
+}
+
 .footer{
     background-color:rgb(29,62,69);
     
