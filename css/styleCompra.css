@@ -18,6 +18,10 @@
     margin-bottom: 25px;
 }
 
+.yellow-card{
+    border: 1px solid rgb(255,193,7); 
+}
+
 .card-title {
     margin-bottom: 25px;
 }
