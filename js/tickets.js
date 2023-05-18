@@ -5,17 +5,21 @@ var correo = document.getElementById("inputCorreo");
 var inputCantidad = document.getElementById('inputCantidad');
 var inputCategoria = document.getElementById('inputCategoria');
 var totalApagar = document.getElementById('totalApagar');
-const btnClick = document.getElementById('compra-btn');
-btnClick.addEventListener("click",validarFormulario);
+
+const btnCompra = document.getElementById('compra-btn');
+btnCompra.addEventListener("click",validarFormulario);
+
+const btnReset = document.getElementById('reset-btn');
+btnReset.addEventListener("click",resetearFormulario);
 
 function validarFormulario(){
 
-  if (contieneNumeros(nombre)) {
+  if (contieneNumeros(nombre.value)) {
     alert("Nombre no debe contener números");
     nombre.focus();
     return false;
-  } else if (contieneNumeros(apellido)) {
-    alert("Apellido no deben contener números");
+  } else if (contieneNumeros(apellido.value)) {
+    alert("Apellido no debe contener números");
     apellido.focus();
     return false;
   }
@@ -67,4 +71,9 @@ function actualizarMontoTotal() {
 
   var total = precioUnitario * descuento * cantidad;
   totalApagar.textContent = 'Total a Pagar $: ' + total;
+}
+
+function resetearFormulario() {
+  document.getElementById("form").reset();
+  totalApagar.textContent = 'Total a Pagar $: '; 
 }
