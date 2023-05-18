@@ -31,6 +31,14 @@ selectElement.addEventListener('change', function() {
       return false;
     }
 
+    if (inputCantidad < 1) {
+      alert("Ingrese una cantidad de tickets válida");
+      inputCantidad.focus();
+      return false;
+    }
+
+    actualizarMontoTotal();
+    return true;
   }
 
   function esCorreoValido(email) {
@@ -43,4 +51,21 @@ selectElement.addEventListener('change', function() {
     return numberRegex.test(input);
   }
 
+  function actualizarMontoTotal() {
+    var cantidad = inputCantidad.value;
+    var categoria = inputCategoria.value;
+    var precioUnitario = 200;
+    var descuento = 0;
+
+    if (categoria === 'estudiante') {
+      descuento = 0.2; 
+    } else if (categoria === 'trainee') {
+      descuento = 0.5; 
+    } else {
+      descuento = 0.75;
+    }
+
+    var total = precioUnitario * descuento * cantidad;
+    totalApagar.textContent = 'Total a Pagar $: ' + total;
+  }
   
