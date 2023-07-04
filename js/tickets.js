@@ -7,12 +7,12 @@ var inputCategoria = document.getElementById('inputCategoria');
 var totalApagar = document.getElementById('totalApagar');
 
 /* Modal */
-var nombreCompra = document.getElementById("nombre_comprar");
-var apellidoCompra = document.getElementById("apellido_comprar");
-var correoCompra = document.getElementById("correo_comprar");
-var inputCantidadCompra = document.getElementById('tickets_comprar');
-var inputCategoriaCompra = document.getElementById('categoria_comprar');
-var totalApagarCompras = document.getElementById('total_comprar');
+var nombreCompra = document.getElementById("nombreCompra");
+var apellidoCompra = document.getElementById("apellidoCompra");
+var correoCompra = document.getElementById("correoCompra");
+var inputCantidadCompra = document.getElementById('inputCantidadCompra');
+var inputCategoriaCompra = document.getElementById('inputCategoriaCompra');
+var totalApagarCompras = document.getElementById('totalApagarCompras');
 /* Modal end*/
 
 const btnCompra = document.getElementById('compra-btn');
@@ -92,8 +92,20 @@ function mostrarModal(){
   document.getElementById('resumenModal').classList.add('show');
   document.getElementById('resumenModal').style.display = 'block';
   document.body.classList.add('modal-open');
+
+  rellenarCamposModal();
 }
 
+function rellenarCamposModal(){
+  nombreCompra.textContent = nombre.value;
+  apellidoCompra.textContent = apellido.value;
+  correoCompra.textContent = correo.value;
+  inputCantidadCompra.textContent = inputCantidad.value;
+  inputCategoriaCompra.textContent = inputCategoria.value;
+  totalApagarCompras.textContent = totalApagar.textContent;
+}
+
+/* cancelar Modal */
 document.getElementById('cancelarButton').addEventListener('click', function() {
   document.getElementById('resumenModal').classList.remove('show');
   document.getElementById('resumenModal').style.display = 'none';
