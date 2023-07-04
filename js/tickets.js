@@ -5,6 +5,7 @@ var correo = document.getElementById("inputCorreo");
 var inputCantidad = document.getElementById('inputCantidad');
 var inputCategoria = document.getElementById('inputCategoria');
 var totalApagar = document.getElementById('totalApagar');
+var total = 0;
 
 /* Modal */
 var nombreCompra = document.getElementById("nombreCompra");
@@ -79,7 +80,7 @@ function actualizarMontoTotal() {
     descuento = 0.85;
   }
 
-  var total = precioUnitario * descuento * cantidad;
+  total = precioUnitario * descuento * cantidad;
   totalApagar.textContent = 'Total a Pagar $: ' + total;
 }
 
@@ -102,7 +103,7 @@ function rellenarCamposModal(){
   correoCompra.textContent = correo.value;
   inputCantidadCompra.textContent = inputCantidad.value;
   inputCategoriaCompra.textContent = inputCategoria.value;
-  totalApagarCompras.textContent = totalApagar.textContent;
+  totalApagarCompras.textContent = '$'+total;
 }
 
 /* cancelar Modal */
