@@ -92,6 +92,10 @@ function mostrarModal(){
   document.getElementById('resumenModal').classList.add('show');
   document.getElementById('resumenModal').style.display = 'block';
   document.body.classList.add('modal-open');
-  document.getElementsByClassName('modal-backdrop')[0].style.display = 'block';
-  document.getElementsByClassName('modal-backdrop')[0].classList.add('show');
 }
+
+document.getElementById('cancelarButton').addEventListener('click', function() {
+  document.getElementById('resumenModal').classList.remove('show');
+  document.getElementById('resumenModal').style.display = 'none';
+  document.body.classList.remove('modal-open');
+});
