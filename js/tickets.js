@@ -6,6 +6,15 @@ var inputCantidad = document.getElementById('inputCantidad');
 var inputCategoria = document.getElementById('inputCategoria');
 var totalApagar = document.getElementById('totalApagar');
 
+/* Modal */
+var nombreCompra = document.getElementById("nombre_comprar");
+var apellidoCompra = document.getElementById("apellido_comprar");
+var correoCompra = document.getElementById("correo_comprar");
+var inputCantidadCompra = document.getElementById('tickets_comprar');
+var inputCategoriaCompra = document.getElementById('categoria_comprar');
+var totalApagarCompras = document.getElementById('total_comprar');
+/* Modal end*/
+
 const btnCompra = document.getElementById('compra-btn');
 btnCompra.addEventListener("click",validarFormulario);
 
@@ -37,6 +46,7 @@ function validarFormulario(){
   }
 
   actualizarMontoTotal();
+  mostrarModal();
   return true;
 }
 
@@ -76,4 +86,12 @@ function actualizarMontoTotal() {
 function resetearFormulario() {
   document.getElementById("form").reset();
   totalApagar.textContent = 'Total a Pagar $: '; 
+}
+
+function mostrarModal(){
+  document.getElementById('resumenModal').classList.add('show');
+  document.getElementById('resumenModal').style.display = 'block';
+  document.body.classList.add('modal-open');
+  document.getElementsByClassName('modal-backdrop')[0].style.display = 'block';
+  document.getElementsByClassName('modal-backdrop')[0].classList.add('show');
 }
